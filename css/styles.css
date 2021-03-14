@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -62,4 +63,96 @@ body {
     grid-template-columns: 9rem 30rem 1fr;
     grid-gap: 2rem;
     margin-bottom: 6.4rem;
+}
+
+.titulo {
+    font-family: 'Playfair Display SC', Georgia;
+    font-size: 9.6rem;
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: 1.6rem;
+    grid-column: 1 / 4;
+}
+
+.animais h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 1.6rem;
+    color: #e54;
+}
+.animais h2::before {
+    content: '';
+    display: inline-block;
+    width: 4rem;
+    height: 1rem;
+    margin-right: 1rem;
+    background: #fb5;
+}
+
+.animais p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
+    
+   
+}
+
+.animais-lista {
+    height: 37rem;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+.animais-lista::-webkit-scrollbar {
+    width: 1.8rem;
+}
+
+.animais-lista::-webkit-scrollbar-thumb {
+    background: #fb5;
+    border-left: .4rem solid #faf6ed;
+    border-right: .4rem solid #faf6ed;
+
+}
+.animais-lista::-webkit-scrollbar-track {
+    background: #faf6ed;
+}
+
+.animais-descricao {
+    grid-column: 3;
+}
+
+.animais-descricao section {
+    margin-bottom: 4.8rem;
+
+}
+
+.faq-lista {
+    grid-column: 2 / 4;
+}
+
+.faq-lista dt {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3.2rem;
+    margin-bottom:.8rem;
+    color: #e54;
+}
+
+.faq-lista dt::before {
+    content:'';
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    margin-right: 1rem;
+    background: #fb5;
+}
+
+.faq-lista dd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+    margin-left: 3rem;
 }
