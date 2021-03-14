@@ -9,7 +9,57 @@ html {
     font-size: 62.5%;
 }
 
-body {
+img {
+    display: block;
+    max-width: 100%;
+}
 
+ul {
+    list-style: none;
+}
+
+body {
+    background: #faf6ed;	
     box-sizing: border-box;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    grid-template-columns: 1fr 12rem minmax(30rem, 80rem)  1fr;
+}
+
+.menu {
+    grid-column: 3 / 5;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    background: #fb5;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+}
+
+.menu li a {
+    display: block;
+    padding: 1rem;
+    margin-right: 1rem;
+    color: #222;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: .1em;
+}
+
+.grid-section {
+    grid-column: 2 / 4;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 9rem 30rem 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 6.4rem;
 }
