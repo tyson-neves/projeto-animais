@@ -25,7 +25,7 @@ body {
     color: #222;
     -webkit-font-smoothing: antialiased;
     display: grid;
-    grid-template-columns: 1fr 12rem minmax(30rem, 80rem)  1fr;
+    grid-template-columns: 1fr 12rem minmax(30rem, 80rem) 1fr;
 }
 
 .menu {
